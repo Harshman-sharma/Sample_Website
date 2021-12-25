@@ -1,8 +1,15 @@
-Sample_Website components
+[IMPORTANT] How to run the website:
 
-1) 1 HTML file 
-2) 2 CSS files
-3) JavaScript files
-4) 3d Models
+Due to some privacy settings in modern day browsers, the data of 3d models would not be passed through the debugger.
+
+1) So, the user had to create a localhost and then run the files. To do that download XMAPP software from given link:
+https://www.apachefriends.org/download.html
+
+2) After downloading go to location => C:\xampp\htdocs
+3) Then create a new folder "test"
+
+4) Then copy this entire github directory over with the folder name, "Sample_Website"
+5) To run the code, go to a web browser(prefer chrome) and type this in navigation bar :
+http://localhost/test/Sample_Website/Home_Page.html.
 
 Everything can be accessed from Home_Page.html
