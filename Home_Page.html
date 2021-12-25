@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>NARUTO Responsive Product Card</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css\style.css">
+        <link rel="stylesheet" type="text/css" href="css\NB.css">
+
+    </head>
+
+    <body>
+        
+        <!-- Three.js library -->
+        <script src="https://threejs.org/build/three.min.js"></script>
+        <!-- GLTFLoader.js source -->
+        <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+
+        <div class = "NB">
+            <div class="navigation_list">
+                <ul>
+                    <li class="list_item active">
+                        <a href="Home_Page.html">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="Explore.html">
+                            <span class="icon">
+                                <ion-icon name="compass-outline"></ion-icon>
+                            </span>
+                            <span class="text">Explore</span>
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="profile.html">
+                            <span class="icon">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </span>
+                            <span class="text">Profile</span>
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="settings.html">
+                            <span class="icon">
+                                <ion-icon name="settings-outline"></ion-icon>
+                            </span>
+                            <span class="text">Settings</span>
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="contact_us.html">
+                            <span class="icon">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </span>
+                            <span class="text">Contact</span>
+                        </a>
+                    </li>
+                    <div class="indicator">
+
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+    <br>
+
+        <div class="cards" >
+            <div class="card" data-center-center="opacity:1;top:0px", data-0-bottom="opacity:0;top:100px">
+                <img src="Stock\Naruto_Shippuden\naruto-shippuden.png">
+                <div class="content">
+                    <h2>Naruto Uzumaki</h2>
+                    <h3>Lead</h3>
+                    <p>The main lead of the show around whom the entire storyline is built.</p>
+                    <a href="naruto_3d.html" class="button">See 3D</a>
+                </div>
+            </div>
+            <div class="card" data-center-center="opacity:1;top:0px", data-0-bottom="opacity:0;top:100px">
+                <img src="Stock\Naruto_Shippuden\Kakashi.png">
+                <div class="content">
+                    <h2>Kakashi Hatake</h2>
+                    <h3>The Copy Ninja</h3>
+                    <p>Naruto's Sensei and owner of Obito's Sharingan.</p>
+                    <a href="kakashi_3d.html" class="button">See 3D</a>
+                </div>
+            </div>
+            <div class="card" data-center-center="opacity:1;top:0px", data-0-bottom="opacity:0;top:100px">
+                <img src="Stock\Naruto_Shippuden\Madara_Uchiha.png">
+                <div class="content">
+                    <h2>Madara Uchiha</h2>
+                    <h3>Mightiest Shinobi</h3>
+                    <p>The strongest unbeatable individual in the entire series.</p>
+                    <a href="madara_3d.html" class="button">See 3D</a>
+                </div>
+            </div>
+            <div class="card" data-center-center="opacity:1;top:0px", data-0-bottom="opacity:0;top:100px">
+                <img src="Stock\Naruto_Shippuden\Itachi_Uchiha.png">
+                <div class="content">
+                    <h2>Itachi Uchiha</h2>
+                    <h3>The prodigy Ninja</h3>
+                    <p>The prodigy who was never celebrated. A pacifist.</p>
+                    <a href="Itachi_3d.html" class="button">See 3D</a>
+                </div>
+            </div>
+            <div class="card" data-center-center="opacity:1;top:0px", data-0-bottom="opacity:0;top:100px">
+                <img src="Stock\Naruto_Shippuden\sasuke.png">
+                <div class="content">
+                    <h2>Sasuke Uchiha</h2>
+                    <h3>Rogue Ninja</h3>
+                    <p>Naruto's best friend</p>
+                    <a href="sasuke_3d.html" class="button">See 3D</a>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+
+        <script>
+            const list_item = document.querySelectorAll(".list_item")
+            function activeLink(){
+                list_item.forEach((item) => 
+                item.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list_item.forEach((item) =>
+            item.addEventListener('click', activeLink))
+        </script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+        <script src="js\skrollr.js"></script>
+        <script type="text/javascript">
+            var s = skrollr.init();
+        </script>
+    </body>
+</html>
