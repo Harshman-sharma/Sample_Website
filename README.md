@@ -8,7 +8,7 @@ https://www.apachefriends.org/download.html
 2) After downloading go to location => C:\xampp\htdocs
 3) Then create a new folder "test".
 
-4) Then copy this entire github directory over with the folder name, "Sample_Website".
+4) Inside the 'test' folder, copy this entire github directory inside a new folder with name, "Sample_Website".
 5) Open the XAMPP localhost control panel. From there run the "Apache" server.
 6) To run the code, go to a web browser(prefer chrome) and type this in navigation bar :
 http://localhost/test/Sample_Website/Home_Page.html.
