@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing : border-box;
+    font-family : 'Poppins', sans-serif;
+}
+
+:root{
+    --clr: #222327;
+    --clr2: white;
+}
+
+body{
+    justify-content : center;
+    align-items : center;
+    background-color : var(--clr2);
+}
+
+.NB{
+    display: flex;
+    justify-content : center;
+    align-items: flex-end;
+    background-color : var(--clr2);
+}
+
+.navigation_list{
+    margin-top: 55px;
+    position : relative;
+    width: 400px;
+    height: 70px;
+    background: white;
+    display:flex;
+    justify-content : center;
+    align-items : center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+.navigation_list ul{
+    display : flex;
+    width : 350px;
+}
+
+.navigation_list ul li{
+    position : relative;
+    list-style : none;
+    width : 70px;
+    height : 70px;
+    z-index: 1;
+}
+
+.navigation_list ul li a{
+    position : relative;
+    display: flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction:column;
+    width: 100%;
+    text-align : center;
+    font-weight: 500;
+}
+
+.navigation_list ul li a .icon{
+    position: relative;
+    display: block;
+    line-height : 75px;
+    font-size: 1.5em;
+    text-align : center;
+    transition : 0.5s;
+    color: var(--clr);
+}
+
+.navigation_list ul li a .text{
+    position : absolute;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    color: var(--clr);
+    opacity : 0;
+    transform : translateY(20px);
+    transition : 0.5s;
+}
+
+.navigation_list ul li.active a .icon{
+    transform: translateY(-32px);
+}
+
+.navigation_list ul li.active a .text{
+    opacity : 1;
+    transform : translateY(10px);
+}
+
+.navigation_list ul li:hover a .icon{
+    transform: translateY(-32px);
+}
+
+.navigation_list ul li:hover a .text{
+    opacity : 1;
+    transform : translateY(10px);
+}
+
+.navigation_list ul li:hover a .indicator{
+    opacity : 1;
+    position:absolute;
+    transition : 0.5s;
+}
+
+.indicator{
+    top: -50%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: #44e9c0;
+    border-radius: 50%;
+    border: 6px solid var(--clr2);
+    transition : 0.5s;
+}
+
+.indicator::before{
+    content : " ";
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 0 var(--clr2);
+}
+
+.indicator::after{
+    content : " ";
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 0 var(--clr2);
+}
+
+.navigation_list ul li:nth-child(1).active ~ .indicator{
+    transform: translateX(calc(70px * 0));
+}
+
+.navigation_list ul li:nth-child(2).active ~ .indicator{
+    transform: translateX(calc(70px * 1));
+}
+
+.navigation_list ul li:nth-child(3).active ~ .indicator{
+    transform: translateX(calc(70px * 2));
+}
+
+.navigation_list ul li:nth-child(4).active ~ .indicator{
+    transform: translateX(calc(70px * 3));
+}
+
+.navigation_list ul li:nth-child(5).active ~ .indicator{
+    transform: translateX(calc(70px * 4));
+}
