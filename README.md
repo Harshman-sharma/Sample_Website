@@ -1,3 +1,5 @@
+Access the website here : https://app.netlify.com/sites/nervous-aryabhata-b68f36
+
 [IMPORTANT] How to run the website:
 
 Due to some privacy settings in modern day browsers, the data of 3d models would not be passed through the debugger.
