@@ -1,6 +1,6 @@
 Access the website here : [https://app.netlify.com/sites/nervous-aryabhata-b68f36](https://nervous-aryabhata-b68f36.netlify.app/)
 
-![image](https://user-images.githubusercontent.com/44753624/171934560-fdbd67da-7347-4385-8e0c-046f3d6588af.png)
+![image](https://user-images.githubusercontent.com/44753624/171934838-82da56ff-3b4a-41ee-97e0-8ac2a97c459b.png)
 
 ![image](https://user-images.githubusercontent.com/44753624/171934387-20f111e8-1656-4425-a3e5-9b29b32f86ae.png)
 
