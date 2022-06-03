@@ -6,6 +6,7 @@ Access the website here : [https://app.netlify.com/sites/nervous-aryabhata-b68f3
 
 ![image](https://user-images.githubusercontent.com/44753624/171934236-584002e0-4893-4134-84c6-3bf8cf770d33.png)
 
+![image](https://user-images.githubusercontent.com/44753624/171935317-87982f1b-24a9-4fbd-a850-55ac822b5dfe.png)
 
 [IMPORTANT] How to run the website:
 
